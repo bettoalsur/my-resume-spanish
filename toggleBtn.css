@@ -1,0 +1,47 @@
+@media (max-width: 750px) {
+
+    .sidebar > .icon-space {
+        position: relative;
+    }
+
+    .sidebar > .icon-space:before {
+        content: "";
+        width: 90%;
+        height: 2px;
+        background-color: white;
+        transform: translateY(-8px);
+        -webkit-transform: translateY(-8px);
+        box-shadow: 0px 8px 0px white,
+        1px 1px 1px rgba(0, 0, 0, 0.8),
+        1px 9px 1px rgba(0, 0, 0, 0.8);
+        position: absolute;
+        transition: all var(--animationTime);
+        -webkit-transition: all var(--animationTime);
+    }
+
+    .sidebar > .icon-space:after {
+        content: "";
+        width: 90%;
+        height: 2px;
+        background-color: white;
+        transform: translateY(8px);
+        -webkit-transform: translateY(8px);
+        box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.8);
+        position: absolute;
+        transition: all var(--animationTime);
+        -webkit-transition: all var(--animationTime);
+    }
+
+    .sidebar.open > .icon-space:before {
+        transform: rotateZ(-45deg);
+        -webkit-transform: rotateZ(-45deg);
+        box-shadow: none;
+    }
+
+    .sidebar.open > .icon-space:after {
+        transform: rotateZ(45deg);
+        -webkit-transform: rotateZ(45deg);
+        box-shadow: none;
+    }
+
+}

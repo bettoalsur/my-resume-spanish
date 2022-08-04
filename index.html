@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="es-ar">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="format-detection" content="telephone=no">
+
+    <title>Currículo</title>
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="responsive.css">
+    <link rel="stylesheet" href="toggleBtn.css">
+
+    <link rel="stylesheet" media="screen" href="https://fontlibrary.org//face/glacial-indifference" type="text/css"/>
+    <link rel="stylesheet" media="screen" href="https://fontlibrary.org//face/source-sans-pro" type="text/css"/>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Assistant&display=swap" rel="stylesheet">  
+    <link href="https://fonts.googleapis.com/css2?family=Assistant:wght@200&display=swap" rel="stylesheet"> 
+
+</head>
+<body>
+    <div class="conteudo"> 
+        <div class="sidebar" >
+            <div class="icon-space" onclick="clickToggle()"></div>
+            <img src="foto.jpg" alt="Foto de perfil" onclick="clickToggle()">
+            <div class="container contato">
+                <span>
+                    <div class="icon-space"><ion-icon name="chevron-up"></ion-icon></div>
+                    <div class="icon-space"><ion-icon name="person"></ion-icon></div>
+                    <p>Contacto</p>
+                </span>
+                <ul>
+                    <li>
+                        <div class="icon-space"><ion-icon name="mail-open"></ion-icon></div>
+                        <span>metilbenceno@gmail.com</span>
+                    </li>
+                    <li onclick="sendMessage()">
+                        <div class="icon-space"><ion-icon name="logo-whatsapp"></ion-icon></div>
+                        <span>+ 55 11 99425-3957</span>
+                    </li>
+                    <li>
+                        <a href="https://www.linkedin.com/in/albertoleduran/">
+                            <div class="icon-space"><ion-icon name="logo-linkedin"></ion-icon></div>
+                            <span>albertoleduran</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://github.com/bettoalsur">
+                            <div class="icon-space"><ion-icon name="logo-github"></ion-icon></div>
+                            <span>bettoalsur</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://www.instagram.com/bettoalsur/">
+                            <div class="icon-space"><ion-icon name="logo-instagram"></ion-icon></div>
+                            <span>bettoalsur</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <div class="container idiomas">
+                <span>
+                    <div class="icon-space"><ion-icon name="chevron-up"></ion-icon></div>
+                    <div class="icon-space"><ion-icon name="mic"></ion-icon></div>
+                    <p>Idiomas</p>
+                </span>
+                <ul>
+                    <li>
+                        <div class="icon-space"><ion-icon name="people-circle"></ion-icon></div>
+                        <span>Español (nativo)</span>
+                    </li>
+                    <li>
+                        <div class="icon-space"><ion-icon name="people-circle"></ion-icon></div>
+                        <span>Portugués (fluido)</span>
+                    </li>
+                    <li>
+                        <div class="icon-space"><ion-icon name="people-circle"></ion-icon></div>
+                        <span>Inglés (avanzado)</span>
+                    </li>
+                    <li>
+                        <div class="icon-space"><ion-icon name="people-circle"></ion-icon></div>
+                        <span>Italiano (intermedio)</span>
+                    </li>
+                </ul>
+            </div>
+            <div class="container linguagens-programacao">
+                <span>
+                    <div class="icon-space"><ion-icon name="chevron-up"></ion-icon></div>
+                    <div class="icon-space"><ion-icon name="code"></ion-icon></div>
+                    <p>Lenguajes de programación</p> 
+                </span>
+                <ul>
+                    <li>
+                        <div class="icon-space"><ion-icon name="code"></ion-icon></div>
+                        <span>Java Script | CSS | HTML</span>
+                    </li>
+                    <li>
+                        <div class="icon-space"><ion-icon name="code"></ion-icon></div>
+                        <span>Matlab | Octave </span>
+                    </li>
+                    <li>
+                        <div class="icon-space"><ion-icon name="code"></ion-icon></div>
+                        <span>C++</span>
+                    </li>
+                </ul>
+            </div>
+            <div class="container premiacoes">
+                <span>
+                    <div class="icon-space"><ion-icon name="chevron-up"></ion-icon></div>
+                    <div class="icon-space"><ion-icon name="trophy"></ion-icon></div>
+                    <p>Premios</p> 
+                </span>
+                <ul>
+                    <li>
+                        <div class="icon-space"><ion-icon name="trophy"></ion-icon></div>
+                        <span>Best Student Paper Award Winner - IEEE (2021)
+                            <span>
+                                <br>
+                                Premio al mejor trabajo de estudiante presentado en el Simposio Latinoamericano de Ultrasonido (LAUS 2021) organizado por el IEEE.
+                            </span>
+                        </span>
+                    </li>
+                    <li>
+                        <div class="icon-space"><ion-icon name="trophy"></ion-icon></div>
+                        <span>Premio a la excelencia académica - UAO (2017)
+                            <span>
+                                <br>
+                                Beca completa por terminar cada semestre con el promedio más alto en la carrera de Ingeniería Mecánica.
+                            </span>
+                        </span>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="conteudo-principal">
+            <h1>ALBERTO LEMOS DURÁN</h1>
+            <div class="linha-horizontal"></div>
+            <h2>Ingeniero Mecánico</h2>
+            <h3>PERFIL PERSONAL</h3>
+            <p>
+                Ingeniero Mecánico egresado de la Universidad Autónoma de Occidente, Colombia 2017, y Magíster en Automatización y Control, egresado de la Universidad de São Paulo, Brasil 2021. He trabajado en la industria como Coordinador de Mantenimiento y he contribuido a la investigación científica con publicaciones en revistas y congresos internacionales. Me apasiona la programación, siendo mi principal interés, la aplicación de herramientas computacionales en la ingeniería y en la educación superior. Actualmente participo en el área de Ingeniería de Software, Front-end.
+            </p>
+            <h3>
+                EXPERIENCIA PROFESIONAL
+            </h3>
+            <h4>
+                Coordinador de mantenimiento industrial
+            </h4>
+            <h5>
+                Empaques Industriales de Colombia S.A.S. | Marzo a Noviembre de 2016
+            </h5>
+            <ul>
+                <li>Coordinación de paradas de máquina, tareas a ser realizadas por el equipo de mantenimiento e adminitración de recursos para las intervenciones.</li>
+                <li>Dibujo CAD de piezas para fabricación y de planta para la disposición de máquinas y productos.</li>
+            </ul>
+            <h4>
+                Monitor académico
+            </h4>
+            <h5>
+                Universidade de São Paulo | Julio de 2020 a Julio de 2021
+            </h5>
+            <ul>
+                <li>Preparación de material didáctico para dar clases.</li>
+                <li>Implementación de códigos para la resolución de problemas físicos.</li>
+                <li>Corrección de tareas y trabajos.</li>
+            </ul>
+            <h3>
+                FORMACIÓN ACADÉMICA
+            </h3>
+            <h4>
+                Universidade de São Paulo, Brasil
+            </h4>
+            <h5>
+                Magíster en Ciéncias | Octubre de 2018 a Septiembre de 2021
+            </h5>
+            <ul>
+                <li>Temas de estudio: ultrasonido de alta frecuencia, simulación computacional de fenómenos acústicos y desarrollo de sensores para el monitoreo de procesos industriales.</li>
+                <li>Disertación enfocada en la caracterización de emulsiones agua en petróleo y en aceite, aplicando sensores de ultrasonido.</li>
+            </ul>
+            <h4>
+                Universidad Autónoma de Occidente, Colombia
+            </h4>
+            <h5>
+                Ingeniero Mecánico | Julio de 2011 a Octubre de 2017
+            </h5>
+            <ul>
+                <li>Tesis enfocada en el diseño y fabricación de transductores ultrasónicos de alta potencia para aplicaciones industriales.</li>
+                <li>Estudios complementarios en idiomas.</li>
+                <li>Promédio final: 9.4 de 10.0</li>
+            </ul>
+        </div>
+    </div>
+
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+    <script src="script.js"></script>
+</body>
+</html>
