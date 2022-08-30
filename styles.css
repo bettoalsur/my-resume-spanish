@@ -18,7 +18,7 @@ body {
 
 .conteudo-principal {
     background-color: #fafafa;
-    width: 475px;
+    width: 480px;
     display: flex;
     flex-direction: column;
     align-items: flex-start;
