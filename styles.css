@@ -18,7 +18,7 @@ body {
 
 .conteudo-principal {
     background-color: #fafafa;
-    width: 500px;
+    width: 475px;
     display: flex;
     flex-direction: column;
     align-items: flex-start;
@@ -109,13 +109,21 @@ li {
     padding-bottom: 20px;
 }
 
-.sidebar img {
+.sidebar img:not(.qr-code) {
     width: 60%;
     height: auto;
     border: 1px black solid;
     border-radius: 50%;
     margin: 75px 20%;
     margin-bottom: 10px;
+}
+
+.sidebar .qr-code {
+    width: 56%;
+    height: auto;
+    margin: 40px 22%;
+    margin-bottom: -10px;
+    margin-top: 25px;
 }
 
 .container {

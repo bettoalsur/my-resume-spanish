@@ -38,7 +38,7 @@
         width: calc( 100% - 60px );
     }
 
-    .sidebar img {
+    .sidebar img:not(.qr-code) {
         margin-top: 26px;
         filter: drop-shadow( 1px 1px 1px rgba(0, 0, 0, 0.7) );
         -webkit-filter: drop-shadow( 1px 1px 1px rgba(0, 0, 0, 0.7) );
@@ -47,10 +47,14 @@
         -webkit-transition: all var(--animationTime);
     }
 
-    .sidebar.open img {
+    .sidebar.open img:not(.qr-code) {
         margin-top: 10px;
         filter: drop-shadow( 2px 2px 2px rgba(0, 0, 0, 0.7) );
         -webkit-filter: drop-shadow( 2px 2px 2px rgba(0, 0, 0, 0.7) );
+    }
+
+    .sidebar .qr-code {
+        display: none;
     }
 
     .sidebar .container {
