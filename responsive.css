@@ -38,7 +38,7 @@
         width: calc( 100% - 60px );
     }
 
-    .sidebar img {
+    .sidebar .img-qr img {
         margin-top: 26px;
         filter: drop-shadow( 1px 1px 1px rgba(0, 0, 0, 0.7) );
         -webkit-filter: drop-shadow( 1px 1px 1px rgba(0, 0, 0, 0.7) );
@@ -47,22 +47,24 @@
         -webkit-transition: all var(--animationTime);
     }
 
-    .sidebar.open img {
+    .sidebar.open .img-qr img {
         margin-top: 10px;
         filter: drop-shadow( 2px 2px 2px rgba(0, 0, 0, 0.7) );
         -webkit-filter: drop-shadow( 2px 2px 2px rgba(0, 0, 0, 0.7) );
     }
 
-    .sidebar > ion-icon {
+    .sidebar .img-qr ion-icon {
+        width: 0px;
+        height: 0px;
         font-size: 0px;
         opacity: 0;
-        top: 0px;
         transition: all var(--animationTime);
         -webkit-transition: all var(--animationTime);
     }
     
-    .sidebar.open > ion-icon {
-        top: calc( 15px + 0.6* (250px) - 18px );
+    .sidebar.open .img-qr ion-icon {
+        width: 18px;
+        height: 18px;
         font-size: 18px;
         opacity: 1;
     }

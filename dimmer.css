@@ -63,14 +63,10 @@
 
 /* ion icon qr code */
 
-.sidebar {
-    position: relative;
-}
-
-.sidebar > ion-icon {
+.sidebar .img-qr ion-icon {
     position: absolute;
     right: 20%; 
-    top: calc( 75px + 0.6* (250px) - 18px );
+    bottom: 10px;
     font-size: 18px;
     color: white;
 

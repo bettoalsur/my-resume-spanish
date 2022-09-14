@@ -9,9 +9,16 @@ function clickToggle() {
     if (sidebar.classList.contains("open")) {
         containers.forEach(container => container.classList.remove("active"));
     }
-
     sidebar.classList.toggle("open");
 }
+
+const conteudoPrincipal = document.querySelector(".conteudo-principal");
+conteudoPrincipal.addEventListener("click",(e) => {
+    if(!sidebar.classList.contains("open")) return;  
+    containers.forEach(container => container.classList.remove("active"));  
+    sidebar.classList.remove("open");
+    
+});
 
 containerTitles.forEach(title => {
     title.addEventListener("click", (e) => {

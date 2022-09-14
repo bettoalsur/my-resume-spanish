@@ -107,7 +107,10 @@ li {
     align-items: flex-start;
 
     padding-bottom: 20px;
-    z-index: 99;
+}
+
+.sidebar .img-qr {
+    position: relative;
 }
 
 .sidebar img {
