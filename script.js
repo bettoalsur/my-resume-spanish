@@ -38,3 +38,13 @@ function sendMessage() {
     var prep = "https://wa.me/+5511994253957?text=";
     window.open(prep + wapMes);
 }
+
+function closeDimmer() {
+    const DIMMER = document.querySelector(".dimmer");
+    DIMMER.classList.add("ocultar");
+}
+
+function openDimmer() {
+    const DIMMER = document.querySelector(".dimmer");
+    DIMMER.classList.remove("ocultar");
+}

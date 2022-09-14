@@ -1,0 +1,78 @@
+.dimmer {
+    background-color: white;
+    opacity: 1;
+
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+
+    position: fixed;
+    width: 100%;
+    height: 100%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    z-index: 100;
+}
+
+.ocultar {
+    display: none;
+}
+
+.qr-code {
+    width: 75vmin;
+    height: auto;
+}
+
+.close-button {
+    cursor: pointer;
+}
+
+.dimmer > .close-button:before {
+    content: "";
+    width: 5vmin;
+    height: 2px;
+    background-color: #335384;
+
+    right: 3vmin;
+    top: 3vmin;
+
+    transform: translateY(2.5vmin) rotateZ(45deg);
+    -webkit-transform: translateY(2.5vmin) rotateZ(45deg);
+    
+    position: absolute;
+}
+
+.dimmer > .close-button:after {
+    content: "";
+    width: 5vmin;
+    height: 2px;
+    background-color: #335384;
+
+    right: 3vmin;
+    top: 3vmin;
+
+    transform: translateY(2.5vmin) rotateZ(-45deg);
+    -webkit-transform: translateY(2.5vmin) rotateZ(-45deg);
+    
+    position: absolute;
+}
+
+/* ion icon qr code */
+
+.sidebar {
+    position: relative;
+}
+
+.sidebar > ion-icon {
+    position: absolute;
+    right: 20%; 
+    top: calc( 75px + 0.6* (250px) - 18px );
+    font-size: 18px;
+    color: white;
+
+    cursor: pointer;
+}
